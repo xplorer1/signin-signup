@@ -1,11 +1,13 @@
 package com.example.auth.vo;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
-@Setter
+@EqualsAndHashCode
+@AllArgsConstructor
+@ToString
 public class RegistrationVo {
+
     private String firstName;
     private String lastName;
     private String email;
