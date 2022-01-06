@@ -23,7 +23,6 @@ public class UserService {
         boolean userExists = appUserRepo.findByEmail(appUser.getEmail()).isPresent();
 
         if(userExists) {
-            System.out.println("exuser: " + userExists);
 
             return ResponseEntity.ok(
                 AppResponse.builder()
